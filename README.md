@@ -16,7 +16,10 @@ source ~/.zshrc
 echo $SPARK_HOME
 
 # hostname 설정
-sudo hostname -s 127.0.0.1
+hostname 입력 후 확인 <br>
+sudo vi /etc/hosts <br>
+127.0.0.1 kimkyungminui-MacBookPro.local 추가
+
 
 # 빌드
 mvn package
