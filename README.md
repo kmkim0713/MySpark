@@ -1,4 +1,4 @@
- #spark-3.5.1-bin-hadoop3 설치
+#spark-3.5.1-bin-hadoop3 설치
 https://spark.apache.org/downloads.html
 
 #java 버전
