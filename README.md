@@ -1,7 +1,7 @@
-#spark-3.5.1-bin-hadoop3 설치
+# spark-3.5.1-bin-hadoop3 설치
 https://spark.apache.org/downloads.html
 
-#java 버전
+# java 버전
 openjdk 17.0.9 2023-10-17
 
 # 압축 해제
