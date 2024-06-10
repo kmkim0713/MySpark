@@ -23,3 +23,17 @@ mvn package
 
 # 실행(IllegalAccessError 발생시, --add-opens 옵션 추가)
 java --add-opens java.base/sun.nio.ch=ALL-UNNAMED -cp target/SparkJavaApp-1.0-SNAPSHOT.jar:$(echo $SPARK_HOME/jars/*.jar | tr ' ' ':') App
+
+
+# kaggle 데이터셋 정의
+-- event_time: 이벤트 발생시간 (UTC) <br/>
+-- event_type: 이벤트 유형 [view, cart, remove_from_cart, purchase]<br/>
+-- product_id: 제품 ID <br/>
+-- category_id: 제품 카테고리 ID <br/>
+-- category_code: 카테고리 명(null) <br/>
+-- brand: 브랜드명(소문자, null) <br/> 
+-- price: 가격 <br/>
+-- user_id: 유저 ID <br/>
+-- user_session: 유저 세션 <br/>
+
+
