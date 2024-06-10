@@ -10,13 +10,11 @@ public class App {
                 .master("local[*]")
                 .config("spark.driver.host","127.0.0.1")
                 .config("spark.driver.bindAddress", "127.0.0.1")
+                .config("spark.sql.legacy.timeParserPolicy", "LEGACY")
                 .getOrCreate();
 
         DailyPartition dailyPartition = new DailyPartition();
-        dailyPartition.show(dailyPartition.calculate(spark));
-
-//        Dataset<Row> data = spark.read().option("header", "true").csv("/Users/kimkyungmin/Desktop/archive/2019-Oct.csv");
-//        data.show();
+        dailyPartition.calculate(spark);
 
         spark.stop();
     }
