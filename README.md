@@ -8,8 +8,8 @@ openjdk 17.0.9 2023-10-17
 tar xvf spark-3.5.1-bin-hadoop3.tgz
 
 # 경로 설정(~/.zshrc에 추가)
-export SPARK_HOME=~/path/to/spark-3.5.1-bin-hadoop3
-export PATH=$SPARK_HOME/bin:$PATH
+export SPARK_HOME=~/path/to/spark-3.5.1-bin-hadoop3 <br/>
+export PATH=$SPARK_HOME/bin:$PATH <br/>
 source ~/.zshrc
 
 # 경로 확인
