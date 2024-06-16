@@ -25,7 +25,8 @@ sudo vi /etc/hosts <br>
 mvn package
 
 # 실행(IllegalAccessError 발생시, --add-opens 옵션 추가)
-java --add-opens java.base/sun.nio.ch=ALL-UNNAMED -cp target/SparkJavaApp-1.0-SNAPSHOT.jar:$(echo $SPARK_HOME/jars/*.jar | tr ' ' ':') App
+java --add-opens java.base/sun.util.calendar=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED -cp target/SparkJavaApp-1.0-SNAPSHOT.jar:$(echo $SPARK_HOME/jars/*.jar | tr ' ' ':') App
+
 
 
 # kaggle 데이터셋 정의
